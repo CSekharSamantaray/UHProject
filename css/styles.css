@@ -34,11 +34,11 @@ body{
   .navbar-brand {
     color: rgb(31, 29, 29);
     display: inline-block;
-    padding-top: .3125rem;
+    /* padding-top: .3125rem;
     padding-bottom: .3125rem;
     margin-right: 1rem;
     font-size: 1.25rem;
-    line-height: inherit;
+    line-height: inherit; */
     white-space: nowrap;
   }
   
