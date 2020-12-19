@@ -1,30 +1,55 @@
 <!DOCTYPE html> 
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Page</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/styles.css">
     </head>
 
     <body>
-        
-        <nav style="padding-top: 20px; background-color: #006b80;">
-            <span class="navbar-brand">Company</span>
-            <span class="navbar-brand">About us</span>
-            <span class="navbar-brand">Services</span>
-            <span class="navbar-brand">Contact Us</span>
-        </nav>
+        <div id="mynav">
+        </div>
+        <nav class="navbar navbar-inverse ">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                <a class="navbar-brand" style="font-size: 2em;">Travel and Tourism</a>
+                
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- <li class="active"><a href="#">Home</a></li> -->
+                    <li><a href="#" onclick="menuClicked('Hotels'); return false;">Hotels</a></li>
+                    <li><a href="#" onclick="menuClicked('Aviation'); return false;">Aviation</a></li>
+                    <li><a href="#" onclick="menuClicked('Cruise'); return false;">Cruise</a></li>
+                    <li><a href="#" onclick="menuClicked('Rail'); return false;">Rail</a></li>
+                    <li><a href="#" onclick="menuClicked('Tours'); return false;">Tours</a></li>
+                    <li><a href="#" onclick="menuClicked('About'); return false;">About</a></li>
+                    <li><a href="#" onclick="menuClicked('Services'); return false;">Services</a></li>
+                    <li><a href="#" onclick="menuClicked('Contact Us'); return false;">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         
         <div style="width:100%;display: inline-block; background-color: #006b80;">
             <!-- <img src="img/main-banner.jpg" style="float:left;" /> -->
-            <div class="container" >
-                <div class="row">
+            <div class="container" style="height:90vh;" >
+                <div class="row" id="divPageContainer" style="height: auto;" >
 
                 </div>
             </div>
-            <span style="color: rgb(30, 30, 30);">Developed by Chandra Sekhar Samantaray.</span>
+            
         </div>
-        
+        <span style="color: rgb(30, 30, 30);">Developed by Chandra Sekhar Samantaray.</span>
+        <script src="js/scripts.js" type="text/javascript"></script>
     </body>
-
 </html>

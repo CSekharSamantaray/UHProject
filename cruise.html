@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>Cruise Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container" style="margin:0 auto; padding-top: 20px;" ></div>
+            <div class="row col-md-10" style="padding-bottom: 20px;">
+                <form action="/action_page.php"></form>
+                    <div class="col-md-2">
+                        <label for="txtfrom">From</label><br>
+                        <input style="max-width: 120px;" id="txtfrom" name="txtfrom" onkeydown="" type="text" class="" >
+                    </div>
+                    <div class="col-md-2">
+                        <label for="txtto">To</label><br>
+                        <input style="max-width: 120px;" id="txtto" name="txtto" onkeydown="" type="text" class=""  >
+                    </div>
+                    <div class="col-md-2">
+                        <label for="journeydate">Journey Date</label><br>
+                        <input type="date" id="journeydate" name="trip-start" value="2024-12-31" min="2020-12-01" max="2024-12-31">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="txtnoofpassengers">No of Travellers</label><br>
+                        <input style="max-width: 120px;" id="txtnoofpassengers" onkeydown="" type="text" class=""  >
+                    </div>
+                    <div class="col-md-2">
+                        <label for="txtbirthcategory">Birth Category</label><br>
+                        <input style="max-width: 120px;" id="txtbirthcategory" onkeydown="" type="text" class=""  >
+                    </div>
+                    <div class="col-md-2" style="padding-top: 20px;">
+                        <input type="button" value="Search" style="color: black;"></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="row col-md-10" >
+
+
+            </div>
+        </div>
+
+        <script src="js/scripts.js" type="text/javascript"></script>
+    </body>
+</html>
