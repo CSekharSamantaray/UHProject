@@ -8,29 +8,36 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <div class="container" style="margin:0 auto; padding-top: 20px;" ></div>
-            <div class="row col-md-10" style="padding-bottom: 20px;">
-                <form action="/action_page.php"></form>
-                    <div class="col-md-2">
-                        <label for="txtfrom">From</label><br>
-                        <input type="text" id="txtfrom" name="txtfrom" value="" style="max-width: 120px;">
-                    </div>
-                    <div class="col-md-2">
-                        <label for="txtto">To</label><br>
-                        <input type="text" id="txtto" name="txtto" value="" style="max-width: 120px;">
-                    </div>
-                    <div class="col-md-2">
-                        <label for="journeydate">Journey Date</label><br>
-                        <input type="date" id="journeydate" name="journeydate" value="2024-12-31" min="2020-12-01" max="2024-12-31">
-                    </div>
-                    <div class="col-md-2">
-                        <label for="txtnoofpassengers">No of Travellers</label><br>
-                        <input style="max-width: 120px;" id="txtnoofpassengers" onkeydown="" type="text" class="" placeholder="" >
-                    </div>
-                    <div class="col-md-2" style="padding-top: 20px;">
-                        <input type="submit" value="Search" style="color: black;"></button>
-                    </div>
-                </form> 
+        <div class="container" style="margin:0 auto; padding-top: 20px;" >
+            <div class="row" style="padding-bottom: 20px;">
+                <div class="col-md-2">
+                    <span class="navbar-brand" style="font-size: 1.8em;">Railways</span><br/>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 20px;">
+                <div class="col-md-10" style="padding-bottom: 20px;">
+                    <form >
+                        <div class="col-md-2">
+                            <label for="txtfrom">From</label><br>
+                            <input type="text" id="txtfrom" name="txtfrom" value="" style="max-width: 120px;" class="formcontrols" required >
+                        </div>
+                        <div class="col-md-2">
+                            <label for="txtto">To</label><br>
+                            <input type="text" id="txtto" name="txtto" value="" style="max-width: 120px;" class="formcontrols" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="journeydate">Journey Date</label><br>
+                            <input type="date" id="journeydate" style="max-width: 130px;" name="journeydate" value="" min="2020-12-01" max="2021-12-31" class="formcontrols" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="txtnoofpassengers">No of Travellers</label><br>
+                            <input style="max-width: 120px;" id="txtnoofpassengers" onkeydown="" type="number" min="1" max="10" class="formcontrols" required>
+                        </div>
+                        <div class="col-md-2" style="padding-top: 25px;">
+                            <input type="submit" value="Search Trains" style="color: black;"></button>
+                        </div>
+                    </form> 
+                </div>
             </div>
 
             <div class="row col-md-10" >

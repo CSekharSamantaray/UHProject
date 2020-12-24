@@ -10,8 +10,10 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
 
-    <body>
-        <div id="mynav">
+    <body onload="bodyOnLoad();">
+        <div id="mybanner" >
+          <img src="img/travelllogo.jpg" />
+          <div style="display: inline; float: right; line-height: 165px;" ><span id="loggedinuser"></span></div>
         </div>
         <nav class="navbar navbar-inverse ">
             <div class="container-fluid">
@@ -29,19 +31,18 @@
                     <!-- <li class="active"><a href="#">Home</a></li> -->
                     <li><a href="#" onclick="menuClicked('Hotels'); return false;">Hotels</a></li>
                     <li><a href="#" onclick="menuClicked('Aviation'); return false;">Aviation</a></li>
-                    <li><a href="#" onclick="menuClicked('Cruise'); return false;">Cruise</a></li>
+                    <!-- <li><a href="#" onclick="menuClicked('Cruise'); return false;">Cruise</a></li> -->
                     <li><a href="#" onclick="menuClicked('Rail'); return false;">Rail</a></li>
-                    <li><a href="#" onclick="menuClicked('Tours'); return false;">Tours</a></li>
-                    <li><a href="#" onclick="menuClicked('About'); return false;">About</a></li>
-                    <li><a href="#" onclick="menuClicked('Services'); return false;">Services</a></li>
+                    <li><a href="#" onclick="menuClicked('About'); return false;">About us</a></li>
                     <li><a href="#" onclick="menuClicked('Contact Us'); return false;">Contact Us</a></li>
+                    <li><a href="#" onclick="logoutClicked();" style="font-size: 1.3em; ">Logout</a></li>
                 </ul>
               </div>
             </div>
           </nav>
         
         <div style="width:100%;display: inline-block; background-color: #006b80;">
-            <!-- <img src="img/main-banner.jpg" style="float:left;" /> -->
+            
             <div class="container" style="height:90vh;" >
                 <div class="row" id="divPageContainer" style="height: auto;" >
 
